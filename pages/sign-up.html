@@ -20,17 +20,30 @@
         ></a>
       </header>
       <form>
-        <input class="sign-up-inp" type="text" placeholder="Username" />
-        <input class="sign-up-inp" type="email" placeholder="Email" />
-        <input class="sign-up-inp" type="password" placeholder="Password" />
         <input
+          minlength="4"
+          class="sign-up-inp"
+          type="text"
+          placeholder="Username"
+        />
+        <input class="sign-up-inp" type="email" placeholder="Email" />
+        <input
+          minlength="8"
+          class="sign-up-inp"
+          type="password"
+          placeholder="Password"
+        />
+        <input
+          minlength="8"
           class="sign-up-inp"
           type="password"
           placeholder="Confirm password"
         />
-        <button class="sign-up-but" type="submit">Зарегистрироваться</button>
+        <button onclick="onClickSignUp()" class="sign-up-but" type="submit">
+          Зарегистрироваться
+        </button>
       </form>
-      <p>или</p>
+      <p>или</p> 
       <div class="social-icons">
         <a href="#"><i class="fa-brands fa-google"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -39,5 +52,6 @@
       </div>
       <p>Уже есть аккаунт? <a href="sign-in.html">Войдите</a></p>
     </article>
+    <script src="../script/sign-up.js"></script>
   </body>
 </html>

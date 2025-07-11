@@ -21,8 +21,15 @@
       </header>
       <form>
         <input class="sign-in-inp" type="email" placeholder="Email" />
-        <input class="sign-in-inp" type="password" placeholder="Password" />
-        <button class="sign-in-but" type="submit">Войти</button>
+        <input
+          minlength="8"
+          class="sign-in-inp"
+          type="password"
+          placeholder="Password"
+        />
+        <button onclick="onClickSignIn()" class="sign-in-but" type="submit">
+          Войти
+        </button>
       </form>
       <p>или</p>
       <div class="social-icons">
@@ -33,5 +40,6 @@
       </div>
       <p>Ещё нет аккаунта? <a href="sign-up.html">Зарегистрироваться</a></p>
     </article>
+    <script src="../script/sign-in.js"></script>
   </body>
 </html>
