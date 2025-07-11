@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(76, 183, 255);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+article {
+  margin-top: 20vh;
+  background-color: aliceblue;
+  width: 40%;
+  height: 40vh;
+  border: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
+}
+
+.social-icons a {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 10px 10px;
+}
+
+.social-icons a:hover {
+  color: red;
+}
+
+.sign-in-inp {
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.5rem;
+  height: 5vh;
+  border: 1px solid black;
+  outline: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-home {
+  text-align: end;
+  font-size: 2rem;
+}
+
+.sign-in-inp:focus {
+  border: 2px solid rgb(13, 0, 190);
+}
+
+.sign-in-but {
+  width: 50%;
+  border: 3px solid darkblue;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: blue;
+  color: #fafafa;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.sign-in-but:hover {
+  border-color: blue;
+  background-color: rgb(0, 112, 187);
+}
+
+.sign-in-but:active {
+  border-color: rgb(39, 168, 255);
+  background-color: rgb(76, 183, 255);
+}
